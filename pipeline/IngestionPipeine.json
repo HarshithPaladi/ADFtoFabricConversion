@@ -79,10 +79,6 @@
 								},
 								"sink": {
 									"type": "AzureSqlSink",
-									"preCopyScript": {
-										"value": "@concat('TRUNCATE TABLE SalesLT.', replace(item().name, '.csv', ''), ';')",
-										"type": "Expression"
-									},
 									"writeBehavior": "insert",
 									"sqlWriterUseTableLock": false,
 									"disableMetricsCollection": false
