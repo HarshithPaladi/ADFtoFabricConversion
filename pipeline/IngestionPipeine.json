@@ -80,7 +80,7 @@
 								"sink": {
 									"type": "AzureSqlSink",
 									"preCopyScript": {
-										"value": "@concat('TRUNCATE TABLE SalesLT.', item().name, ';')",
+										"value": "@concat('TRUNCATE TABLE SalesLT.', replace(item().name, '.csv', ''), ';')",
 										"type": "Expression"
 									},
 									"writeBehavior": "insert",
@@ -110,7 +110,7 @@
 									"parameters": {
 										"SchemaName": "SalesLT",
 										"TableName": {
-											"value": "@item().name",
+											"value": "@replace(item().name, '.csv', '')",
 											"type": "Expression"
 										}
 									}
