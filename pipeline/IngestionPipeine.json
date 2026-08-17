@@ -80,7 +80,7 @@
 								"sink": {
 									"type": "AzureSqlSink",
 									"preCopyScript": {
-										"value": "@concat('TRUNCATE TABLE dbo.',  replace(item().name, '.csv', ''), ';')",
+										"value": "@concat('TRUNCATE TABLE SalesLT.',  replace(item().name, '.csv', ''), ';')",
 										"type": "Expression"
 									},
 									"writeBehavior": "insert",
