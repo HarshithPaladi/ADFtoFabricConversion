@@ -1,0 +1,22 @@
+{
+	"name": "AzureSqlDBConnection",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDBConnection",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SchemaName": {
+				"type": "string",
+				"defaultValue": "SalesLT"
+			},
+			"TableName": {
+				"type": "string",
+				"defaultValue": "Address"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
