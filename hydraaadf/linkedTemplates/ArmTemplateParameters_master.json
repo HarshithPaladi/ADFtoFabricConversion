@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "hydraaadf"
+		},
+		"AzureDataLakeStorageConnection_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDBConnection_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorageConnection_properties_typeProperties_url": {
+			"value": "https://hydrablobstorage.dfs.core.windows.net/"
+		},
+		"AzureSqlDBConnection_properties_typeProperties_server": {
+			"value": "hydraserver.database.windows.net"
+		},
+		"AzureSqlDBConnection_properties_typeProperties_database": {
+			"value": "hydradatabase"
+		},
+		"AzureSqlDBConnection_properties_typeProperties_userName": {
+			"value": "hydraadmin"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
